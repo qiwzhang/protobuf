@@ -924,7 +924,7 @@ class Map {
     size_type Seed() const {
       // random_device can throw, so avoid it unless we are compiling with
       // exceptions enabled.
-#if __cpp_exceptions && LANG_CXX11
+#if 0
       try {
         std::random_device rd;
         std::knuth_b knuth(rd());
